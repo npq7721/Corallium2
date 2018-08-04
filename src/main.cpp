@@ -1616,55 +1616,55 @@ double ConvertBitsToDouble(unsigned int nBits)
 }
 
 float getRegularBlockValue(int nHeight) {
-	if(nHeight <= 65700) {
+	if(nHeight < 65700) {
 		return 6.5;
 	}
-	if(nHeight <= 131400) {
+	if(nHeight < 131400) {
 		return 5.8;
 	}
-	if(nHeight <= 197100) {
+	if(nHeight < 197100) {
 		return 5.265;
 	}
-	if(nHeight <= 262800) {
+	if(nHeight < 262800) {
 		return 4.7385;
 	}
-	if(nHeight <= 525600) {
+	if(nHeight < 525600) {
 		return 4.2647;
 	}
-	if(nHeight <= 788400) {
+	if(nHeight < 788400) {
 		return 3.8382;
 	}
-	if(nHeight <= 1051200) {
+	if(nHeight < 1051200) {
 		return 3.4544;
 	}
-	if(nHeight <= 131400) {
+	if(nHeight < 131400) {
 		return 3.1089;
 	}
-	if(nHeight <= 1576800) {
+	if(nHeight < 1576800) {
 		return 2.7980;
 	}
-	if(nHeight <= 1839600) {
+	if(nHeight < 1839600) {
 		return 2.5182;
 	}
-	if(nHeight <= 2102400) {
+	if(nHeight < 2102400) {
 		return 2.2664;
 	}
-	if(nHeight <= 2365200) {
+	if(nHeight < 2365200) {
 		return 2.0398;
 	}
-	if(nHeight <= 2628000) {
+	if(nHeight < 2628000) {
 		return 1.8358;
 	}
-	if(nHeight <= 2890800) {
+	if(nHeight < 2890800) {
 		return 1.65221;
 	}
-	if(nHeight <= 3153600) {
+	if(nHeight < 3153600) {
 		return 1.48699;
 	}
-	if(nHeight <= 3416400) {
+	if(nHeight < 3416400) {
 		return 1.33829;
 	}
-	if(nHeight <= 3679200) {
+	if(nHeight < 3679200) {
 		return 1.20446;
 	}
 	return 1.08402;
@@ -1675,55 +1675,55 @@ float getSuperBlockValue(int nHeight) {
 	if(endDigit != 6 && endDigit != 9) {
 		return -1;
 	}
-	if(nHeight <= 65700) {
+	if(nHeight < 65700) {
 		return 12;
 	}
-	if(nHeight <= 131400) {
+	if(nHeight < 131400) {
 		return 10.8;
 	}
-	if(nHeight <= 197100) {
+	if(nHeight < 197100) {
 		return 9.72;
 	}
-	if(nHeight <= 262800) {
+	if(nHeight < 262800) {
 		return 8.7480;
 	}
-	if(nHeight <= 525600) {
+	if(nHeight < 525600) {
 		return 7.8732;
 	}
-	if(nHeight <= 788400) {
+	if(nHeight < 788400) {
 		return 7.0859;
 	}
-	if(nHeight <= 1051200) {
+	if(nHeight < 1051200) {
 		return 6.3773;
 	}
-	if(nHeight <= 131400) {
+	if(nHeight < 131400) {
 		return 5.7396;
 	}
-	if(nHeight <= 1576800) {
+	if(nHeight < 1576800) {
 		return 5.1656;
 	}
-	if(nHeight <= 1839600) {
+	if(nHeight < 1839600) {
 		return 4.6490;
 	}
-	if(nHeight <= 2102400) {
+	if(nHeight < 2102400) {
 		return 4.1841;
 	}
-	if(nHeight <= 2365200) {
+	if(nHeight < 2365200) {
 		return 3.7657;
 	}
-	if(nHeight <= 2628000) {
+	if(nHeight < 2628000) {
 		return 3.3892;
 	}
-	if(nHeight <= 2890800) {
+	if(nHeight < 2890800) {
 		return 3.05024;
 	}
-	if(nHeight <= 3153600) {
+	if(nHeight < 3153600) {
 		return 2.74522;
 	}
-	if(nHeight <= 3416400) {
+	if(nHeight < 3416400) {
 		return 2.47069;
 	}
-	if(nHeight <= 3679200) {
+	if(nHeight < 3679200) {
 		return 2.22362;
 	}
 	return 2.00126;
@@ -1734,55 +1734,55 @@ float getUtraBlockValue(int nHeight) {
 	if(endDigit != 2) {
 		return -1;
 	}
-	if(nHeight <= 65700) {
+	if(nHeight < 65700) {
 		return 22;
 	}
-	if(nHeight <= 131400) {
+	if(nHeight < 131400) {
 		return 19.8;
 	}
-	if(nHeight <= 197100) {
+	if(nHeight < 197100) {
 		return 17.82;
 	}
-	if(nHeight <= 262800) {
+	if(nHeight < 262800) {
 		return 16.038;
 	}
-	if(nHeight <= 525600) {
+	if(nHeight < 525600) {
 		return 14.4342;
 	}
-	if(nHeight <= 788400) {
+	if(nHeight < 788400) {
 		return 12.9908;
 	}
-	if(nHeight <= 1051200) {
+	if(nHeight < 1051200) {
 		return 11.6917;
 	}
-	if(nHeight <= 131400) {
+	if(nHeight < 131400) {
 		return 10.5225;
 	}
-	if(nHeight <= 1576800) {
+	if(nHeight < 1576800) {
 		return 9.4703;
 	}
-	if(nHeight <= 1839600) {
+	if(nHeight < 1839600) {
 		return 8.5233;
 	}
-	if(nHeight <= 2102400) {
+	if(nHeight < 2102400) {
 		return 7.6709;
 	}
-	if(nHeight <= 2365200) {
+	if(nHeight < 2365200) {
 		return 6.9038;
 	}
-	if(nHeight <= 2628000) {
+	if(nHeight < 2628000) {
 		return 6.2134;
 	}
-	if(nHeight <= 2890800) {
+	if(nHeight < 2890800) {
 		return 5.59210;
 	}
-	if(nHeight <= 3153600) {
+	if(nHeight < 3153600) {
 		return 5.03289;
 	}
-	if(nHeight <= 3416400) {
+	if(nHeight < 3416400) {
 		return 4.52960;
 	}
-	if(nHeight <= 3679200) {
+	if(nHeight < 3679200) {
 		return 4.07664;
 	}
 	return 3.66898;
@@ -1793,46 +1793,46 @@ float getLuckyBlockValue(int nHeight) {
 	if(endDigit != 777) {
 		return -1;
 	}
-	if(nHeight <= 262800) {
+	if(nHeight < 262800) {
 		return 77;
 	}
-	if(nHeight <= 525600) {
+	if(nHeight < 525600) {
 		return 69.30;
 	}
-	if(nHeight <= 788400) {
+	if(nHeight < 788400) {
 		return 62.37;
 	}
-	if(nHeight <= 1051200) {
+	if(nHeight < 1051200) {
 		return 56.13;
 	}
-	if(nHeight <= 131400) {
+	if(nHeight < 131400) {
 		return 50.52;
 	}
-	if(nHeight <= 1576800) {
+	if(nHeight < 1576800) {
 		return 45.47;
 	}
-	if(nHeight <= 1839600) {
+	if(nHeight < 1839600) {
 		return 40.92;
 	}
-	if(nHeight <= 2102400) {
+	if(nHeight < 2102400) {
 		return 36.83;
 	}
-	if(nHeight <= 2365200) {
+	if(nHeight < 2365200) {
 		return 33.15;
 	}
-	if(nHeight <= 2628000) {
+	if(nHeight < 2628000) {
 		return 29.83;
 	}
-	if(nHeight <= 2890800) {
+	if(nHeight < 2890800) {
 		return 26.85;
 	}
-	if(nHeight <= 3153600) {
+	if(nHeight < 3153600) {
 		return 24.16;
 	}
-	if(nHeight <= 3416400) {
+	if(nHeight < 3416400) {
 		return 21.75;
 	}
-	if(nHeight <= 3679200) {
+	if(nHeight < 3679200) {
 		return 19.57;
 	}
 	return 17.62;
@@ -1847,9 +1847,10 @@ int64_t GetBlockValue(int nHeight)
     }
     if (nHeight == 1) {
         nSubsidy = 411569 * COIN; // premine
-    } else if(nHeight <= 10080) {
+    } else if(nHeight < 10080) {
     	nSubsidy = 1 * COIN/10;
-    } else if(nHeight <= 3942000) {
+    } else if(nHeight < 3942000) {
+    	nHeight++;
     	float value = getLuckyBlockValue(nHeight);
     	if(value == -1) {
     		value = getSuperBlockValue(nHeight);
