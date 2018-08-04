@@ -1616,7 +1616,7 @@ double ConvertBitsToDouble(unsigned int nBits)
 }
 
 float getRegularBlockValue(int nHeight) {
-	if(nHeight < 65700) {
+	if(nHeight < 1570) {
 		return 6.5;
 	}
 	if(nHeight < 131400) {
@@ -1675,7 +1675,7 @@ float getSuperBlockValue(int nHeight) {
 	if(endDigit != 6 && endDigit != 9) {
 		return -1;
 	}
-	if(nHeight < 65700) {
+	if(nHeight < 1570) {
 		return 12;
 	}
 	if(nHeight < 131400) {
@@ -1734,7 +1734,7 @@ float getUtraBlockValue(int nHeight) {
 	if(endDigit != 2) {
 		return -1;
 	}
-	if(nHeight < 65700) {
+	if(nHeight < 1570) {
 		return 22;
 	}
 	if(nHeight < 131400) {
@@ -1793,7 +1793,7 @@ float getLuckyBlockValue(int nHeight) {
 	if(endDigit != 777) {
 		return -1;
 	}
-	if(nHeight < 262800) {
+	if(nHeight < 2628) {
 		return 77;
 	}
 	if(nHeight < 525600) {
@@ -1847,7 +1847,7 @@ int64_t GetBlockValue(int nHeight)
     }
     if (nHeight == 1) {
         nSubsidy = 411569 * COIN; // premine
-    } else if(nHeight < 10080) {
+    } else if(nHeight < 1008) {
     	nSubsidy = 1 * COIN/10;
     } else if(nHeight < 3942000) {
     	nHeight++;
