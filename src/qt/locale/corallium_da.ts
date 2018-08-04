@@ -62,11 +62,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your CRLM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your CRLM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -176,16 +176,16 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>Monkey will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MONKs from being stolen by malware infecting your computer.</source>
-        <translation>Monkey vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
+        <source>Corallium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRLMs from being stolen by malware infecting your computer.</source>
+        <translation>Corallium vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONK&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE MONK&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRLM&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE CRLM&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 kryptografering</translation>
     </message>
     <message>
-        <source>Enter a MONK Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast den MONK adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
+        <source>Enter a CRLM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Indtast den CRLM adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>Den MONK adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>Den CRLM adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne MONK adresse.</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne CRLM adresse.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Indtast den krypterede BIP 38 nøgle. Indtast kodeordet i den midterste boks. Klik på dekryptér for at generere den private nøgle. Når nøglen er dekrypteret vil klip på "importér adresse" overføre den private nøgle til tegnebogen.</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne MONK adresse</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne CRLM adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige MONK adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige CRLM adresse.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey kerne</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium kerne</translation>
     </message>
     <message>
-        <source>Send coins to a MONK address</source>
-        <translation>Send mønter til en MONK adresse</translation>
+        <source>Send coins to a CRLM address</source>
+        <translation>Send mønter til en CRLM adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monkey: URIs)</source>
-        <translation>Anmod om betaling (genrerer QR kode og Monkey URL)</translation>
+        <source>Request payments (generates QR codes and corallium: URIs)</source>
+        <translation>Anmod om betaling (genrerer QR kode og Corallium URL)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Monkey Core</source>
-        <translation>&amp;Om Monkey kerne</translation>
+        <source>&amp;About Corallium Core</source>
+        <translation>&amp;Om Corallium kerne</translation>
     </message>
     <message>
-        <source>Show information about Monkey Core</source>
-        <translation>Vis information om Monkey kerne</translation>
+        <source>Show information about Corallium Core</source>
+        <translation>Vis information om Corallium kerne</translation>
     </message>
     <message>
-        <source>Modify configuration options for Monkey</source>
-        <translation>Ret konfigurationsindstillinger for Monkey</translation>
+        <source>Modify configuration options for Corallium</source>
+        <translation>Ret konfigurationsindstillinger for Corallium</translation>
     </message>
     <message>
-        <source>Sign messages with your MONK addresses to prove you own them</source>
-        <translation>Underskriv beskeder med Deres MONK adresser for at bekræfte at De ejer dem.</translation>
+        <source>Sign messages with your CRLM addresses to prove you own them</source>
+        <translation>Underskriv beskeder med Deres CRLM adresser for at bekræfte at De ejer dem.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MONK addresses</source>
-        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne MONK adresse</translation>
+        <source>Verify messages to ensure they were signed with specified CRLM addresses</source>
+        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne CRLM adresse</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a monkey: URI or payment request</source>
-        <translation>Åbn en monkey URI eller betalingsanmodning</translation>
+        <source>Open a corallium: URI or payment request</source>
+        <translation>Åbn en corallium URI eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Monkey Core help message to get a list with possible Monkey command-line options</source>
-        <translation>Vis hjelpetekster fra Monkey kernen for at få en liste med mulige Monkey kommandolinie-startparametre</translation>
+        <source>Show the Corallium Core help message to get a list with possible Corallium command-line options</source>
+        <translation>Vis hjelpetekster fra Corallium kernen for at få en liste med mulige Corallium kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Monkey Core client</source>
-        <translation>Monkey kerneklient</translation>
+        <source>Corallium Core client</source>
+        <translation>Corallium kerneklient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,8 +809,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (monkey.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (monkey.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (corallium.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (corallium.conf).</translation>
     </message>
 </context>
 <context>
@@ -983,8 +983,8 @@ Adresse: %4
         <translation>middelhøj</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uMONK per input.</source>
-        <translation>kan variere +/- %1 uMONK pr. input</translation>
+        <source>Can vary +/- %1 uCRLM per input.</source>
+        <translation>kan variere +/- %1 uCRLM pr. input</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1098,8 +1098,8 @@ Adresse: %4
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MONK address.</source>
-        <translation>Den indtastede adresse %1 er ikke en gyldig MONK adresse</translation>
+        <source>The entered address "%1" is not a valid CRLM address.</source>
+        <translation>Den indtastede adresse %1 er ikke en gyldig CRLM adresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1144,16 +1144,16 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey kerne</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium kerne</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Monkey Core</source>
-        <translation>om Monkey kerne</translation>
+        <source>About Corallium Core</source>
+        <translation>om Corallium kerne</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1199,16 +1199,16 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Monkey Core.</source>
-        <translation>Velkommen til Monkey kerne</translation>
+        <source>Welcome to Corallium Core.</source>
+        <translation>Velkommen til Corallium kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Monkey Core will store its data.</source>
-        <translation>Da det er første gang programmet startes, kan De vælge hvor Monkey kernen skal lagre sine data</translation>
+        <source>As this is the first time the program is launched, you can choose where Corallium Core will store its data.</source>
+        <translation>Da det er første gang programmet startes, kan De vælge hvor Corallium kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Monkey Core will download and store a copy of the Monkey block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Monkey kernen vil nu hente og gemme en kopi af Monkey blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
+        <source>Corallium Core will download and store a copy of the Corallium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Corallium kernen vil nu hente og gemme en kopi af Corallium blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1219,8 +1219,8 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey kerne</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium kerne</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1361,12 +1361,12 @@ Adresse: %4
         <translation>Indtast modtageradresse</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MONK addresses after it matures.
-To Add: enter percentage to give and MONK address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CRLM addresses after it matures.
+To Add: enter percentage to give and CRLM address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre MONK adressater når den er tilstrækkelig stor.
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den MONK adresse som skal modtage via Multisendsystemet.
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre CRLM adressater når den er tilstrækkelig stor.
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den CRLM adresse som skal modtage via Multisendsystemet.
 For at fjerne: Indtast adressen som skal slettes og klik på slet.
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
@@ -1539,8 +1539,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Hvis De slår "brug af ubekræftede penge tilbage" vil penge tilbage &lt;br/&gt; ikke kunne benyttes før transaktionen er bekræftet mindst en gang. &lt;br/&gt;Dette har også indflydelse på opgørelsen af saldoen.</translation>
     </message>
     <message>
-        <source>Automatically open the Monkey client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Monkey klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
+        <source>Automatically open the Corallium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn Corallium klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1559,12 +1559,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically start Monkey after logging in to the system.</source>
-        <translation>Start Monkey automatisk, når der logges på systemet</translation>
+        <source>Automatically start Corallium after logging in to the system.</source>
+        <translation>Start Corallium automatisk, når der logges på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Monkey on system login</source>
-        <translation>&amp;start Monkey når der logges på systemet</translation>
+        <source>&amp;Start Corallium on system login</source>
+        <translation>&amp;start Corallium når der logges på systemet</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1591,16 +1591,16 @@ Kontroller adressen og prøv igen.</translation>
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Monkey.</source>
-        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Monkey klienten startes</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Corallium.</source>
+        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Corallium klienten startes</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Monkey network through a SOCKS5 proxy.</source>
-        <translation>Tilslut Monkey netværket gennem en SOCKS5 PROXY</translation>
+        <source>Connect to the Corallium network through a SOCKS5 proxy.</source>
+        <translation>Tilslut Corallium netværket gennem en SOCKS5 PROXY</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1746,8 +1746,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Indskyder- eller masternodebelønning er stadig under behandling</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Monkey network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Monkey netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Corallium network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Corallium netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1813,11 +1813,11 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start monkey: click-to-pay handler</source>
-        <translation>Kan ikke starte monkey "klik for at betale" systemet</translation>
+        <source>Cannot start corallium: click-to-pay handler</source>
+        <translation>Kan ikke starte corallium "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MONK address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid CRLM address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -1903,8 +1903,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a MONK address (e.g. %1)</source>
-        <translation>Indtast en MONK adresse (F.eks. %1)</translation>
+        <source>Enter a CRLM address (e.g. %1)</source>
+        <translation>Indtast en CRLM adresse (F.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2037,8 +2037,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Monkey debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Monkey debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
+        <source>Open the Corallium debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn Corallium debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2205,8 +2205,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ud:</translation>
     </message>
     <message>
-        <source>Welcome to the Monkey RPC console.</source>
-        <translation>Velkommen til Monkey RPC konsollet</translation>
+        <source>Welcome to the Corallium RPC console.</source>
+        <translation>Velkommen til Corallium RPC konsollet</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2276,12 +2276,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Valgfri opmærkning som tilknyttes den nye modtageradresse.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Monkey network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Monkey netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Corallium network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Corallium netværket.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Monkey network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Monkey netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Corallium network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Corallium netværket.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2505,8 +2505,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 MONK</source>
-        <translation>0 MONK</translation>
+        <source>0 CRLM</source>
+        <translation>0 CRLM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2549,15 +2549,15 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Bekræftelsestid</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMONKs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMONKs in fee,&lt;br /&gt;while "at least" pays 1000 uMONKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMONKs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMONK i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uMONKs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uCRLMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCRLMs in fee,&lt;br /&gt;while "at least" pays 1000 uCRLMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uCRLMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uCRLM i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uCRLMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMONKs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMONKs in fee,&lt;br /&gt;while "total at least" pays 1000 uMONKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMONKs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMONK i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uMONKs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uCRLMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCRLMs in fee,&lt;br /&gt;while "total at least" pays 1000 uCRLMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uCRLMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uCRLM i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uCRLMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Monkey transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Corallium transactions than the network can process.</source>
         <translation>Betaling af mindste transaktionsgebyr vil være fint så længe der er færre transaktioner end der er plads til i blokkene. &lt;br /&gt; Men opmærksomheden henledes på, at det kan resultere i en transaktion der aldrig bliver bekræftet i det øjeblik der er større behov for transaktioner end netværket har plads til. </translation>
     </message>
     <message>
@@ -2657,8 +2657,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Anvender</translation>
     </message>
     <message>
-        <source>Warning: Invalid MONK address</source>
-        <translation>Advarsel! Ugyldig MONK adresse</translation>
+        <source>Warning: Invalid CRLM address</source>
+        <translation>Advarsel! Ugyldig CRLM adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2756,8 +2756,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The MONK address to send the payment to</source>
-        <translation>MONK adressen, som betalingen skal sendes til</translation>
+        <source>The CRLM address to send the payment to</source>
+        <translation>CRLM adressen, som betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2796,8 +2796,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the monkey: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Monkey network.</source>
-        <translation>En besked, der var vedhæftet til monkey: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the corallium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Corallium network.</source>
+        <translation>En besked, der var vedhæftet til corallium: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2823,8 +2823,8 @@ Kontroller adressen og prøv igen.</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Monkey Core is shutting down...</source>
-        <translation>Monkey kernen lukker ned</translation>
+        <source>Corallium Core is shutting down...</source>
+        <translation>Corallium kernen lukker ned</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2846,8 +2846,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>De kan underskrive beskeder med Deres adresser or at bevise ejerskab. Vær forsigtig med at underskrive noget De er usikker på såsom forsøg op at narre Dem til at oplyse Deres identitet. Skriv kun under på noget De kan stå inde for, og som De er enig i. </translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>Den MONK adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>Den CRLM adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2878,16 +2878,16 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne MONK adresse.</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne CRLM adresse.</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne MONK adresse</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne CRLM adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige MONK adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige CRLM adresse.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2973,8 +2973,8 @@ Kontroller adressen og prøv igen.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey kerne</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium kerne</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2993,8 +2993,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>PIVX "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Monkey Core developers</source>
-        <translation>Monkey "core" udviklerne</translation>
+        <source>The Corallium Core developers</source>
+        <translation>Corallium "core" udviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3481,8 +3481,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MONK.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1 MONK.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CRLM.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1 CRLM.</translation>
     </message>
 </context>
 <context>
@@ -3525,7 +3525,7 @@ Kontroller adressen og prøv igen.</translation>
     </message>
 </context>
 <context>
-    <name>monkey-core</name>
+    <name>corallium-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3551,8 +3551,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Monkey Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. Monkey core kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. Corallium Core is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. Corallium core kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3571,8 +3571,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
     </message>
     <message>
-        <source>Disable all Monkey specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Monkey funktioner fra (Masternoder, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all Corallium specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle Corallium funktioner fra (Masternoder, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3612,12 +3612,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in MONK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in MONK/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in CRLM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in CRLM/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in MONK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in MONK/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in CRLM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in CRLM/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3708,36 +3708,36 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use monkeyd, or the -server option to monkey-qt, you must set an rpcpassword in the configuration file:
+        <source>To use coralliumd, or the -server option to corallium-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=monkeyrpc
+rpcuser=coralliumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Monkey Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Corallium Alert" admin@foo.com
 </source>
-        <translation>For at bruge monkeyd eller -server muligheden sammen med monkey-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge coralliumd eller -server muligheden sammen med corallium-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=monkeyrpc
+Rpcuser=coralliumrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!
 Hvis filen ikke eksisterer, opret den med sikkerhedsindstillingen - ejer kun læserettigheder tilladelsen.
 Det anbefales tillige at vælge alertnotify til for at blive orienteret om eventuelle problemer.
-For eksempel: alertnotify=Echo %% | mail - s "Monkey ALARM!" e-mail@administrator.dk
+For eksempel: alertnotify=Echo %% | mail - s "Corallium ALARM!" e-mail@administrator.dk
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Monkey Core is probably already running.</source>
-        <translation>Det var ikke muligt at forbinde %s på denne computer. Monkey kører sandsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. Corallium Core is probably already running.</source>
+        <translation>Det var ikke muligt at forbinde %s på denne computer. Corallium kører sandsynligvis allerede.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 MONK.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 MONK.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CRLM.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 CRLM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3752,8 +3752,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Monkey ALARM!" e-mail@administrato
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Monkey Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Monkey core ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Corallium Core will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Corallium core ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3896,8 +3896,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Monkey ALARM!" e-mail@administrato
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The Monkey Core Developers</source>
-        <translation>Copyright (C) 2017-%i The Monkey Core Developers</translation>
+        <source>Copyright (C) 2017-%i The Corallium Core Developers</source>
+        <translation>Copyright (C) 2017-%i The Corallium Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3968,8 +3968,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Monkey ALARM!" e-mail@administrato
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Monkey Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Monkey core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Corallium Core</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Corallium core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4012,8 +4012,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Monkey ALARM!" e-mail@administrato
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in MONK/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i MONK/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in CRLM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i CRLM/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4072,8 +4072,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Monkey ALARM!" e-mail@administrato
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Monkey Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. Monkey core lukker ned. </translation>
+        <source>Initialization sanity check failed. Corallium Core is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. Corallium core lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4600,8 +4600,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Monkey ALARM!" e-mail@administrato
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Monkey Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart Monkey core for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart Corallium Core to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart Corallium core for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

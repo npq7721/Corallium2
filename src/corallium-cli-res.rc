@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Monkey"
-            VALUE "FileDescription",    "monkey-cli (OSS RPC client for Monkey)"
+            VALUE "CompanyName",        "Corallium"
+            VALUE "FileDescription",    "corallium-cli (OSS RPC client for Corallium)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "monkey-cli"
+            VALUE "InternalName",       "corallium-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "monkey-cli.exe"
-            VALUE "ProductName",        "monkey-cli"
+            VALUE "OriginalFilename",   "corallium-cli.exe"
+            VALUE "ProductName",        "corallium-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

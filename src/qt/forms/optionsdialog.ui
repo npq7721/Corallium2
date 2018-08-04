@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start Monkey after logging in to the system.</string>
+          <string>Automatically start Corallium after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Monkey on system login</string>
+          <string>&amp;Start Corallium on system login</string>
          </property>
         </widget>
        </item>
@@ -220,7 +220,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the Monkey client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the Corallium client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -240,7 +240,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the Monkey network through a SOCKS5 proxy.</string>
+          <string>Connect to the Corallium network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -406,7 +406,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting Monkey.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting Corallium.</string>
            </property>
           </widget>
          </item>

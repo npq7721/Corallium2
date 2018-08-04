@@ -1,19 +1,19 @@
 [Unit]
-Description=Monkey's distributed currency daemon
+Description=Corallium's distributed currency daemon
 After=network.target
 
 [Service]
-User=monkey
-Group=monkey
+User=corallium
+Group=corallium
 
 Type=forking
-PIDFile=/var/lib/monkeyd/monkeyd.pid
+PIDFile=/var/lib/coralliumd/coralliumd.pid
 
-ExecStart=/usr/bin/monkeyd -daemon -pid=/var/lib/monkeyd/monkeyd.pid \
-          -conf=/etc/monkey/monkey.conf -datadir=/var/lib/monkeyd
+ExecStart=/usr/bin/coralliumd -daemon -pid=/var/lib/coralliumd/coralliumd.pid \
+          -conf=/etc/corallium/corallium.conf -datadir=/var/lib/coralliumd
 
-ExecStop=-/usr/bin/monkey-cli -conf=/etc/monkey/monkey.conf \
-         -datadir=/var/lib/monkeyd stop
+ExecStop=-/usr/bin/corallium-cli -conf=/etc/corallium/corallium.conf \
+         -datadir=/var/lib/coralliumd stop
 
 Restart=always
 PrivateTmp=true

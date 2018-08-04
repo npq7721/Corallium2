@@ -305,7 +305,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from Monkey core
+    // Update address book model from Corallium core
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

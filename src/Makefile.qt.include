@@ -1,33 +1,33 @@
-bin_PROGRAMS += qt/monkey-qt
+bin_PROGRAMS += qt/corallium-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# monkey qt core #
+# corallium qt core #
 QT_TS = \
-  qt/locale/monkey_bg.ts \
-  qt/locale/monkey_ca.ts \
-  qt/locale/monkey_cs.ts \
-  qt/locale/monkey_da.ts \
-  qt/locale/monkey_de.ts \
-  qt/locale/monkey_en.ts \
-  qt/locale/monkey_en_US.ts \
-  qt/locale/monkey_es.ts \
-  qt/locale/monkey_fi.ts \
-  qt/locale/monkey_fr_FR.ts \
-  qt/locale/monkey_it.ts \
-  qt/locale/monkey_ja.ts \
-  qt/locale/monkey_ko_KR.ts \
-  qt/locale/monkey_nl.ts \
-  qt/locale/monkey_pl.ts \
-  qt/locale/monkey_pt.ts \
-  qt/locale/monkey_pt_BR.ts \
-  qt/locale/monkey_ro_RO.ts \
-  qt/locale/monkey_ru.ts \
-  qt/locale/monkey_sk.ts \
-  qt/locale/monkey_sv.ts \
-  qt/locale/monkey_tr.ts \
-  qt/locale/monkey_uk.ts \
-  qt/locale/monkey_zh_CN.ts \
-  qt/locale/monkey_zh_TW.ts
+  qt/locale/corallium_bg.ts \
+  qt/locale/corallium_ca.ts \
+  qt/locale/corallium_cs.ts \
+  qt/locale/corallium_da.ts \
+  qt/locale/corallium_de.ts \
+  qt/locale/corallium_en.ts \
+  qt/locale/corallium_en_US.ts \
+  qt/locale/corallium_es.ts \
+  qt/locale/corallium_fi.ts \
+  qt/locale/corallium_fr_FR.ts \
+  qt/locale/corallium_it.ts \
+  qt/locale/corallium_ja.ts \
+  qt/locale/corallium_ko_KR.ts \
+  qt/locale/corallium_nl.ts \
+  qt/locale/corallium_pl.ts \
+  qt/locale/corallium_pt.ts \
+  qt/locale/corallium_pt_BR.ts \
+  qt/locale/corallium_ro_RO.ts \
+  qt/locale/corallium_ru.ts \
+  qt/locale/corallium_sk.ts \
+  qt/locale/corallium_sv.ts \
+  qt/locale/corallium_tr.ts \
+  qt/locale/corallium_uk.ts \
+  qt/locale/corallium_zh_CN.ts \
+  qt/locale/corallium_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -107,16 +107,16 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/monkey.moc \
+  qt/corallium.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_monkey.cpp
-QT_QRC = qt/monkey.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_monkey_locale.cpp
-QT_QRC_LOCALE = qt/monkey_locale.qrc
+QT_QRC_CPP = qt/qrc_corallium.cpp
+QT_QRC = qt/corallium.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_corallium_locale.cpp
+QT_QRC_LOCALE = qt/corallium_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -309,7 +309,7 @@ BITCOIN_QT_CPP += \
 endif
 
 RES_IMAGES = \
-  qt/res/images/monkey_logo_horizontal.png \
+  qt/res/images/corallium_logo_horizontal.png \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
@@ -327,7 +327,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/monkey-qt-res.rc
+BITCOIN_RC = qt/res/corallium-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -347,69 +347,69 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_monkey_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_corallium_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# monkey-qt binary #
-qt_monkey_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# corallium-qt binary #
+qt_corallium_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_monkey_qt_SOURCES = qt/monkey.cpp
+qt_corallium_qt_SOURCES = qt/corallium.cpp
 if TARGET_DARWIN
-  qt_monkey_qt_SOURCES += $(BITCOIN_MM)
+  qt_corallium_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_monkey_qt_SOURCES += $(BITCOIN_RC)
+  qt_corallium_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_monkey_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_corallium_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_monkey_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_corallium_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_monkey_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_corallium_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_monkey_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_corallium_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_monkey_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_monkey_qt_LIBTOOLFLAGS = --tag CXX
+qt_corallium_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_corallium_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/monkeystrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/coralliumstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/monkeystrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/coralliumstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/monkey_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/corallium_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name monkey_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name corallium_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name monkey $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name corallium $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-monkey_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_monkey_qt_OBJECTS) qt/monkey-qt$(EXEEXT) $(LIBBITCOINQT)
+corallium_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_corallium_qt_OBJECTS) qt/corallium-qt$(EXEEXT) $(LIBBITCOINQT)
 
-monkey_qt : qt/monkey-qt$(EXEEXT)
+corallium_qt : qt/corallium-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

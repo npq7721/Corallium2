@@ -1,2 +1,2 @@
-debian/manpages/monkeyd.1
-debian/manpages/monkey.conf.5
+debian/manpages/coralliumd.1
+debian/manpages/corallium.conf.5

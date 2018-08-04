@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2017 The Monkey developers
+// Copyright (c) 2017-2017 The Corallium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/monkey-config.h"
+#include "config/corallium-config.h"
 #endif
 
 #include "amount.h"
@@ -235,6 +235,10 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake);
 
 bool ActivateBestChain(CValidationState& state, CBlock* pblock = NULL, bool fAlreadyChecked = false);
+float getRegularBlockValue(int nHeight);
+float getSuperBlockValue(int nHeight);
+float getUtraBlockValue(int nHeight);
+float getLuckyBlockValue(int nHeight);
 CAmount GetBlockValue(int nHeight);
 
 /** Create a new block index entry for a given block hash */

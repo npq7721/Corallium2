@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2017 The Monkey developers
+// Copyright (c) 2017-2017 The Corallium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,8 +26,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Monkey (http://www.monkey.vision),
- * which enables instant payments to anyone, anywhere in the world. Monkey uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Corallium (http://www.corallium.vision),
+ * which enables instant payments to anyone, anywhere in the world. Corallium uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -67,18 +67,18 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/monkey.conf are parsed in qt/monkey.cpp's main()
+    // If Qt is used, parameters/corallium.conf are parsed in qt/corallium.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Monkey Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("Corallium Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  monkeyd [options]                     " + _("Start Monkey Core Daemon") + "\n";
+                        "  coralliumd [options]                     " + _("Start Corallium Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -114,17 +114,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "monkey:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "corallium:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in monkeyd anymore. Use the monkey-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in coralliumd anymore. Use the corallium-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "Monkey server starting\n");
+            fprintf(stdout, "Corallium server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -177,7 +177,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect monkey signal handlers
+    // Connect corallium signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

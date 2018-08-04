@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/monkey/.monkey" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/monkey/.monkey"
+if [ -d "/var/lib/corallium/.corallium" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/corallium/.corallium"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/monkeyd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/coralliumd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/monkey/monkey.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/monkeyd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/monkeyd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/corallium/corallium.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/coralliumd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/coralliumd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-monkey}
-BITCOIND_GROUP=${BITCOIND_GROUP:-monkey}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/monkeyd}
+BITCOIND_USER=${BITCOIND_USER:-corallium}
+BITCOIND_GROUP=${BITCOIND_GROUP:-corallium}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/coralliumd}
 
-name="Monkey Core Daemon"
-description="Monkey crypto-currency p2p network daemon"
+name="Corallium Core Daemon"
+description="Corallium crypto-currency p2p network daemon"
 
-command="/usr/bin/monkeyd"
+command="/usr/bin/coralliumd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run monkeyd."
+		eerror "ERROR: You must set a secure rpcpassword to run coralliumd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Monkey Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Corallium Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

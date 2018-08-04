@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
-This issue tracker is only for technical issues related to Monkey Core.
-General Monkey questions and/or support requests and are best directed to the [Monkey Discord](https://discord.monkey.vision).
+This issue tracker is only for technical issues related to Corallium Core.
+General Corallium questions and/or support requests and are best directed to the [Corallium Discord](https://discord.corallium.vision).
 
 ### Describe the issue
 
@@ -20,7 +20,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of Monkey Core are you using?
+### What version of Corallium Core are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package.
 
 ### Machine specs:

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Monkey"
-            VALUE "FileDescription",    "monkeyd (OSS daemon/client for Monkey)"
+            VALUE "CompanyName",        "Corallium"
+            VALUE "FileDescription",    "coralliumd (OSS daemon/client for Corallium)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "monkeyd"
+            VALUE "InternalName",       "coralliumd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "monkeyd.exe"
-            VALUE "ProductName",        "monkeyd"
+            VALUE "OriginalFilename",   "coralliumd.exe"
+            VALUE "ProductName",        "coralliumd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

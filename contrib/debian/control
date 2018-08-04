@@ -1,4 +1,4 @@
-Source: monkey
+Source: corallium
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -22,15 +22,15 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.monkey.vision
-Vcs-Git: git://github.com/monkeyproject/monkeyv2.git
-Vcs-Browser: http://github.com/monkeyproject/monkeyv2
+Homepage: http://www.corallium.vision
+Vcs-Git: git://github.com/coralliumproject/coralliumv2.git
+Vcs-Browser: http://github.com/coralliumproject/coralliumv2
 
-Package: monkeyd
+Package: coralliumd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Monkey is a free open source peer-to-peer electronic cash system that
+ Corallium is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -39,20 +39,20 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, monkeyd, and the CLI tool
- monkey-cli to interact with the daemon.
+ This package provides the daemon, coralliumd, and the CLI tool
+ corallium-cli to interact with the daemon.
 
-Package: monkey-qt
+Package: corallium-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Monkey (MONK) is a sustainable cryptocurrency modeled after
+ Corallium (CRLM) is a sustainable cryptocurrency modeled after
  Satoshi Nakamoto’s vision for Bitcoin.
  It is a decentralized, peer-to-peer transactional currency designed
  to offer a solution to the problem posed by the exponential increase
  in energy consumed by Bitcoin and other proof-of-work currencies.
  Proof-of-work mining is environmentally unsustainable due to the
- electricity used by high-powered mining hardware. Monkey
+ electricity used by high-powered mining hardware. Corallium
  utilizes an energy efficient proof-of-stake algorithm, can be
  mined on any computer, and will never require specialized mining
  equipment.
@@ -60,4 +60,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides Monkey-Qt, a GUI for Monkey based on Qt.
+ This package provides Corallium-Qt, a GUI for Corallium based on Qt.

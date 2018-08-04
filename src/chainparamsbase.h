@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between monkey-cli and monkeyd)
- * of a given instance of the Monkey system.
+ * CBaseChainParams defines the base parameters (shared between corallium-cli and coralliumd)
+ * of a given instance of the Corallium system.
  */
 class CBaseChainParams
 {

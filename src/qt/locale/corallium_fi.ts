@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun MONK osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your CRLM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun CRLM osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun MONK osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your CRLM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun CRLM osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Monkey will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MONKs from being stolen by malware infecting your computer.</source>
-        <translation>Monkey sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella MONKien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Corallium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRLMs from being stolen by malware infecting your computer.</source>
+        <translation>Corallium sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella CRLMien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONK&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki MONKisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRLM&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki CRLMisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a MONK Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä MONK osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a CRLM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä CRLM osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>MONK osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>CRLM osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän MONK osoitteen</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän CRLM osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>MONK osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>CRLM osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla MONK osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla CRLM osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Ydin</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a MONK address</source>
-        <translation>Lähetä kolikkoja MONK osoitteeseen</translation>
+        <source>Send coins to a CRLM address</source>
+        <translation>Lähetä kolikkoja CRLM osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monkey: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja monkey: URIja)</translation>
+        <source>Request payments (generates QR codes and corallium: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja corallium: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Monkey Core</source>
-        <translation>Monkey Core &amp;ytimestä</translation>
+        <source>&amp;About Corallium Core</source>
+        <translation>Corallium Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Monkey Core</source>
-        <translation>Näytä tietoja Monkey Ytimestä</translation>
+        <source>Show information about Corallium Core</source>
+        <translation>Näytä tietoja Corallium Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for Monkey</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja Monkey:lle</translation>
+        <source>Modify configuration options for Corallium</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Corallium:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your MONK addresses to prove you own them</source>
+        <source>Sign messages with your CRLM addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MONK addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä MONK osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified CRLM addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä CRLM osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a monkey: URI or payment request</source>
-        <translation>Avaa monkey: URI tai pyydä maksua</translation>
+        <source>Open a corallium: URI or payment request</source>
+        <translation>Avaa corallium: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Monkey Core help message to get a list with possible Monkey command-line options</source>
-        <translation>Näytä Monkey Ydin apuviesti saadaksesi lista mahdollisista Monkey komentolinja komennoista.</translation>
+        <source>Show the Corallium Core help message to get a list with possible Corallium command-line options</source>
+        <translation>Näytä Corallium Ydin apuviesti saadaksesi lista mahdollisista Corallium komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Monkey Core client</source>
-        <translation>Monkey Ydin asiakasohjelma</translation>
+        <source>Corallium Core client</source>
+        <translation>Corallium Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Ydin</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Monkey Core.</source>
-        <translation>Tervetuloa Monkey Ytimeen.</translation>
+        <source>Welcome to Corallium Core.</source>
+        <translation>Tervetuloa Corallium Ytimeen.</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Ydin</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1154,12 +1154,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Monkey after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Monkey kun kirjaudut sisään.</translation>
+        <source>Automatically start Corallium after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Corallium kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Monkey on system login</source>
-        <translation>&amp;Aloita Monkey järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Corallium on system login</source>
+        <translation>&amp;Aloita Corallium järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1178,12 +1178,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Monkey.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Corallium.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the Monkey network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Monkey verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Corallium network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Corallium verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1400,8 +1400,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the Monkey debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Monkey debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Corallium debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Corallium debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1512,8 +1512,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Monkey RPC console.</source>
-        <translation>Tervetuloa Monkey RPC konsoliin.</translation>
+        <source>Welcome to the Corallium RPC console.</source>
+        <translation>Tervetuloa Corallium RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1555,12 +1555,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Monkey network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Monkey verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Corallium network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Corallium verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Monkey network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Monkey verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Corallium network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Corallium verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1756,8 +1756,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 MONK</source>
-        <translation>0 MONK</translation>
+        <source>0 CRLM</source>
+        <translation>0 CRLM</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1840,8 +1840,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid MONK address</source>
-        <translation>Varoitus: Virheellinen MONK osoite</translation>
+        <source>Warning: Invalid CRLM address</source>
+        <translation>Varoitus: Virheellinen CRLM osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1879,8 +1879,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The MONK address to send the payment to</source>
-        <translation>MONK osoite johon maksu lähetetään</translation>
+        <source>The CRLM address to send the payment to</source>
+        <translation>CRLM osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1922,8 +1922,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Monkey Core is shutting down...</source>
-        <translation>Monkey core sammuu...</translation>
+        <source>Corallium Core is shutting down...</source>
+        <translation>Corallium core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1941,8 +1941,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>MONK osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>CRLM osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1973,16 +1973,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän MONK osoitteen</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän CRLM osoitteen</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>MONK osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>CRLM osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla MONK osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla CRLM osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2064,8 +2064,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Ydin</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2084,8 +2084,8 @@ Please check the address and try again.</source>
         <translation>PIVX core kehittäjät</translation>
     </message>
     <message>
-        <source>The Monkey Core developers</source>
-        <translation>Monkey core kehittäjät</translation>
+        <source>The Corallium Core developers</source>
+        <translation>Corallium core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2388,7 +2388,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>monkey-core</name>
+    <name>corallium-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2438,8 +2438,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Monkey Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Monkey Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Corallium Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Corallium Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

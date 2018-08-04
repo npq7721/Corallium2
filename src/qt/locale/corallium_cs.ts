@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše MONK adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your CRLM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše CRLM adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše MONK adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your CRLM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše CRLM adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Monkey will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MONKs from being stolen by malware infecting your computer.</source>
-        <translation>Monkey se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše MONKy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Corallium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRLMs from being stolen by malware infecting your computer.</source>
+        <translation>Corallium se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše CRLMy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONK&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE MONKy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRLM&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE CRLMy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a MONK Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte MONK adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a CRLM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte CRLM adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>MONK adresa pro podepsání zprávy</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>CRLM adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto MONK adresu</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto CRLM adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>MONK adresa zprávy byla podpsána</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>CRLM adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou MONK adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou CRLM adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Core</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Core</translation>
     </message>
     <message>
-        <source>Send coins to a MONK address</source>
-        <translation>Odeslat platbuna MONK adresu</translation>
+        <source>Send coins to a CRLM address</source>
+        <translation>Odeslat platbuna CRLM adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monkey: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a monkey: URIs)</translation>
+        <source>Request payments (generates QR codes and corallium: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a corallium: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Monkey Core</source>
-        <translation>&amp;O Monkey Core</translation>
+        <source>&amp;About Corallium Core</source>
+        <translation>&amp;O Corallium Core</translation>
     </message>
     <message>
-        <source>Show information about Monkey Core</source>
-        <translation>Zobraz informace o Monkey Core</translation>
+        <source>Show information about Corallium Core</source>
+        <translation>Zobraz informace o Corallium Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for MONK</source>
-        <translation>Upravit možnosti konfigurace pro MONK</translation>
+        <source>Modify configuration options for CRLM</source>
+        <translation>Upravit možnosti konfigurace pro CRLM</translation>
     </message>
     <message>
-        <source>Sign messages with your MONK addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší MONK adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your CRLM addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší CRLM adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MONK addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými MONK adresami</translation>
+        <source>Verify messages to ensure they were signed with specified CRLM addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými CRLM adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a monkey: URI or payment request</source>
-        <translation>Otevřít monkey: URI nebo platební žádost</translation>
+        <source>Open a corallium: URI or payment request</source>
+        <translation>Otevřít corallium: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Monkey Core help message to get a list with possible Monkey command-line options</source>
-        <translation>Zobrazit Monkey Core pomocnou zpráv pro získání seznamu možných parametrů Monkey pro příkazy do příkazové řádky</translation>
+        <source>Show the Corallium Core help message to get a list with possible Corallium command-line options</source>
+        <translation>Zobrazit Corallium Core pomocnou zpráv pro získání seznamu možných parametrů Corallium pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Monkey Core client</source>
-        <translation>Monkey Core klient</translation>
+        <source>Corallium Core client</source>
+        <translation>Corallium Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (monkey.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (monkey.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (corallium.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (corallium.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1062,8 +1062,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MONK address.</source>
-        <translation>Zadaná adresa "%1" není validní MONK adresa.</translation>
+        <source>The entered address "%1" is not a valid CRLM address.</source>
+        <translation>Zadaná adresa "%1" není validní CRLM adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1108,12 +1108,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Core</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Core</translation>
     </message>
     <message>
-        <source>About Monkey Core</source>
-        <translation>O Monkey Core</translation>
+        <source>About Corallium Core</source>
+        <translation>O Corallium Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1147,16 +1147,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Monkey Core.</source>
-        <translation>Vítejte v Monkey Core.</translation>
+        <source>Welcome to Corallium Core.</source>
+        <translation>Vítejte v Corallium Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Monkey Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Monkey Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Corallium Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Corallium Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>Monkey Core will download and store a copy of the Monkey block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Monkey Core stáhne a uloží kopii Monkey blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Corallium Core will download and store a copy of the Corallium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Corallium Core stáhne a uloží kopii Corallium blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1167,8 +1167,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Core</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1469,12 +1469,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Monkey after logging in to the system.</source>
-        <translation>Automaticky spustit Monkey po přihlášení do systému</translation>
+        <source>Automatically start Corallium after logging in to the system.</source>
+        <translation>Automaticky spustit Corallium po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Monkey on system login</source>
-        <translation>&amp;Spusti Monkey při přihlášení do systému</translation>
+        <source>&amp;Start Corallium on system login</source>
+        <translation>&amp;Spusti Corallium při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -1931,8 +1931,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 MONK</source>
-        <translation>0 MONK</translation>
+        <source>0 CRLM</source>
+        <translation>0 CRLM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2060,8 +2060,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>MONK adresa pro podepsání zprávy</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>CRLM adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2088,16 +2088,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto MONK adresu</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto CRLM adresu</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>MONK adresa zprávy byla podpsána</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>CRLM adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou MONK adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou CRLM adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2139,8 +2139,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Core</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Core</translation>
     </message>
     </context>
 <context>
@@ -2243,7 +2243,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>monkey-core</name>
+    <name>corallium-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

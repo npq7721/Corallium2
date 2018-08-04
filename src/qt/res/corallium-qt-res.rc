@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Monkey"
-            VALUE "FileDescription",    "Monkey Core (OSS GUI client for Monkey)"
+            VALUE "CompanyName",        "Corallium"
+            VALUE "FileDescription",    "Corallium Core (OSS GUI client for Corallium)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "monkey-qt"
+            VALUE "InternalName",       "corallium-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "monkey-qt.exe"
-            VALUE "ProductName",        "Monkey Core"
+            VALUE "OriginalFilename",   "corallium-qt.exe"
+            VALUE "ProductName",        "Corallium Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

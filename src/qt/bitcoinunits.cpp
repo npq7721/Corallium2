@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2017 The Monkey developers
+// Copyright (c) 2017-2017 The Corallium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MONK);
-    unitlist.append(mMONK);
-    unitlist.append(uMONK);
+    unitlist.append(CRLM);
+    unitlist.append(mCRLM);
+    unitlist.append(uCRLM);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case MONK:
-    case mMONK:
-    case uMONK:
+    case CRLM:
+    case mCRLM:
+    case uCRLM:
         return true;
     default:
         return false;
@@ -41,11 +41,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case MONK:
+    case CRLM:
         return QString("monk");
-    case mMONK:
+    case mCRLM:
         return QString("mmonk");
-    case uMONK:
+    case uCRLM:
         return QString::fromUtf8("umonk");
     default:
         return QString("???");
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case MONK:
-            return QString("MONK");
-        case mMONK:
-            return QString("mMONK");
-        case uMONK:
-            return QString::fromUtf8("μMONK");
+        case CRLM:
+            return QString("CRLM");
+        case mCRLM:
+            return QString("mCRLM");
+        case uCRLM:
+            return QString::fromUtf8("μCRLM");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case MONK:
-            return QString("tMONK");
-        case mMONK:
-            return QString("mtMONK");
-        case uMONK:
-            return QString::fromUtf8("μtMONK");
+        case CRLM:
+            return QString("tCRLM");
+        case mCRLM:
+            return QString("mtCRLM");
+        case uCRLM:
+            return QString::fromUtf8("μtCRLM");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case MONK:
-            return QString("MONK");
-        case mMONK:
-            return QString("Milli-MONK (1 / 1" THIN_SP_UTF8 "000)");
-        case uMONK:
-            return QString("Micro-MONK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CRLM:
+            return QString("CRLM");
+        case mCRLM:
+            return QString("Milli-CRLM (1 / 1" THIN_SP_UTF8 "000)");
+        case uCRLM:
+            return QString("Micro-CRLM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case MONK:
-            return QString("TestMONKs");
-        case mMONK:
-            return QString("Milli-TestMONK (1 / 1" THIN_SP_UTF8 "000)");
-        case uMONK:
-            return QString("Micro-TestMONK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CRLM:
+            return QString("TestCRLMs");
+        case mCRLM:
+            return QString("Milli-TestCRLM (1 / 1" THIN_SP_UTF8 "000)");
+        case uCRLM:
+            return QString("Micro-TestCRLM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case MONK:
+    case CRLM:
         return 100000000;
-    case mMONK:
+    case mCRLM:
         return 100000;
-    case uMONK:
+    case uCRLM:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case MONK:
+    case CRLM:
         return 8;
-    case mMONK:
+    case mCRLM:
         return 5;
-    case uMONK:
+    case uCRLM:
         return 2;
     default:
         return 0;

@@ -76,7 +76,7 @@ HEADERS += src/activemasternode.h \
            src/compressor.h \
            src/core_io.h \
            src/crypter.h \
-           src/monkey-config.h \
+           src/corallium-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/monkey-config.h \
+           src/config/corallium-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -331,7 +331,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/monkey.moc \
+           src/qt/corallium.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -369,9 +369,9 @@ SOURCES += src/activemasternode.cpp \
            src/core_read.cpp \
            src/core_write.cpp \
            src/crypter.cpp \
-           src/monkey-cli.cpp \
-           src/monkey-tx.cpp \
-           src/monkey.cpp \
+           src/corallium-cli.cpp \
+           src/corallium-tx.cpp \
+           src/corallium.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -468,8 +468,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroldialog.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
-           src/qt/monkey.cpp \
-           src/qt/monkeystrings.cpp \
+           src/qt/corallium.cpp \
+           src/qt/coralliumstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -546,7 +546,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_monkey.cpp \
+           src/test/test_corallium.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -637,21 +637,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/monkey.qrc src/qt/monkey_locale.qrc
+RESOURCES += src/qt/corallium.qrc src/qt/corallium_locale.qrc
 
-TRANSLATIONS += src/qt/locale/monkey_bg.ts \
-                src/qt/locale/monkey_de.ts \
-                src/qt/locale/monkey_en.ts \
-                src/qt/locale/monkey_es.ts \
-                src/qt/locale/monkey_fi.ts \
-                src/qt/locale/monkey_fr.ts \
-                src/qt/locale/monkey_it.ts \
-                src/qt/locale/monkey_ja.ts \
-                src/qt/locale/monkey_pl.ts \
-                src/qt/locale/monkey_pt.ts \
-                src/qt/locale/monkey_ru.ts \
-                src/qt/locale/monkey_sk.ts \
-                src/qt/locale/monkey_sv.ts \
-                src/qt/locale/monkey_vi.ts \
-                src/qt/locale/monkey_zh_CN.ts \
-                src/qt/locale/monkey_zh_TW.ts
+TRANSLATIONS += src/qt/locale/corallium_bg.ts \
+                src/qt/locale/corallium_de.ts \
+                src/qt/locale/corallium_en.ts \
+                src/qt/locale/corallium_es.ts \
+                src/qt/locale/corallium_fi.ts \
+                src/qt/locale/corallium_fr.ts \
+                src/qt/locale/corallium_it.ts \
+                src/qt/locale/corallium_ja.ts \
+                src/qt/locale/corallium_pl.ts \
+                src/qt/locale/corallium_pt.ts \
+                src/qt/locale/corallium_ru.ts \
+                src/qt/locale/corallium_sk.ts \
+                src/qt/locale/corallium_sv.ts \
+                src/qt/locale/corallium_vi.ts \
+                src/qt/locale/corallium_zh_CN.ts \
+                src/qt/locale/corallium_zh_TW.ts

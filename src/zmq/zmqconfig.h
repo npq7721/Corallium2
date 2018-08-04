@@ -6,7 +6,7 @@
 #define BITCOIN_ZMQ_ZMQCONFIG_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/monkey-config.h"
+#include "config/corallium-config.h"
 #endif
 
 #include <stdarg.h>

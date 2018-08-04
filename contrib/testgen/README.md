@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Monkey tests.
+Utilities to generate test vectors for the data-driven Corallium tests.
 
 Usage:
 

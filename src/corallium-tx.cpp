@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2017 The Monkey developers
+// Copyright (c) 2017-2017 The Corallium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,10 +48,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Monkey Core monkey-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Corallium Core corallium-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  monkey-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded monkey transaction") + "\n" +
-                               "  monkey-tx [options] -create [commands]   " + _("Create hex-encoded monkey transaction") + "\n" +
+                               "  corallium-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded corallium transaction") + "\n" +
+                               "  corallium-tx [options] -create [commands]   " + _("Create hex-encoded corallium transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -553,7 +553,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded monkey transaction
+            // param: hex-encoded corallium transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MONKEY_CSPORKDB_H
-#define MONKEY_CSPORKDB_H
+#ifndef CORALLIUM_CSPORKDB_H
+#define CORALLIUM_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //MONKEY_CSPORKDB_H
+#endif //CORALLIUM_CSPORKDB_H

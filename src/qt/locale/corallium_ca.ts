@@ -164,8 +164,8 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONK&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES MONKS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRLM&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES CRLMS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Monkey</source>
-        <translation>Monkey</translation>
+        <source>Corallium</source>
+        <translation>Corallium</translation>
     </message>
     <message>
-        <source>&amp;About Monkey</source>
-        <translation>&amp;Sobre Monkey</translation>
+        <source>&amp;About Corallium</source>
+        <translation>&amp;Sobre Corallium</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Core</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Core</translation>
     </message>
     <message>
-        <source>About Monkey Core</source>
-        <translation>Sobre Monkey Core</translation>
+        <source>About Corallium Core</source>
+        <translation>Sobre Corallium Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Monkey Core.</source>
-        <translation>Benvingut a Monkey Core.</translation>
+        <source>Welcome to Corallium Core.</source>
+        <translation>Benvingut a Corallium Core.</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Core</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1101,8 +1101,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Core</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1253,7 +1253,7 @@
     </message>
     </context>
 <context>
-    <name>monkey-core</name>
+    <name>corallium-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

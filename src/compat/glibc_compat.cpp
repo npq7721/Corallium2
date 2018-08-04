@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Monkey developers
+// Copyright (c) 2017-2018 The Corallium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/monkey-config.h"
+#include "config/corallium-config.h"
 #endif
 
 #include <cstddef>

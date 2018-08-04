@@ -1,2 +1,2 @@
-usr/local/bin/monkeyd usr/bin
-usr/local/bin/monkey-cli usr/bin
+usr/local/bin/coralliumd usr/bin
+usr/local/bin/corallium-cli usr/bin

@@ -242,10 +242,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Monkey server.");
+            "\nStop Corallium server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Monkey server stopping";
+    return "Corallium server stopping";
 }
 
 
@@ -327,33 +327,33 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Monkey features */
-        {"monkey", "masternode", &masternode, true, true, false},
-        {"monkey", "listmasternodes", &listmasternodes, true, true, false},
-        {"monkey", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"monkey", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"monkey", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"monkey", "masternodedebug", &masternodedebug, true, true, false},
-        {"monkey", "startmasternode", &startmasternode, true, true, false},
-        {"monkey", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"monkey", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"monkey", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"monkey", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"monkey", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"monkey", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"monkey", "mnbudget", &mnbudget, true, true, false},
-        {"monkey", "preparebudget", &preparebudget, true, true, false},
-        {"monkey", "submitbudget", &submitbudget, true, true, false},
-        {"monkey", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"monkey", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"monkey", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"monkey", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"monkey", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"monkey", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"monkey", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"monkey", "checkbudgets", &checkbudgets, true, true, false},
-        {"monkey", "mnsync", &mnsync, true, true, false},
-        {"monkey", "spork", &spork, true, true, false},
+        /* Corallium features */
+        {"corallium", "masternode", &masternode, true, true, false},
+        {"corallium", "listmasternodes", &listmasternodes, true, true, false},
+        {"corallium", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"corallium", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"corallium", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"corallium", "masternodedebug", &masternodedebug, true, true, false},
+        {"corallium", "startmasternode", &startmasternode, true, true, false},
+        {"corallium", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"corallium", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"corallium", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"corallium", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"corallium", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"corallium", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"corallium", "mnbudget", &mnbudget, true, true, false},
+        {"corallium", "preparebudget", &preparebudget, true, true, false},
+        {"corallium", "submitbudget", &submitbudget, true, true, false},
+        {"corallium", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"corallium", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"corallium", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"corallium", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"corallium", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"corallium", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"corallium", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"corallium", "checkbudgets", &checkbudgets, true, true, false},
+        {"corallium", "mnsync", &mnsync, true, true, false},
+        {"corallium", "spork", &spork, true, true, false},
         {"bitcoingreen", "preparecommunityproposal", &preparecommunityproposal, true, true, false},
         {"bitcoingreen", "submitcommunityproposal", &submitcommunityproposal, true, true, false},
         {"bitcoingreen", "getcommunityinfo", &getcommunityinfo, true, true, false},
@@ -1077,7 +1077,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> monkey-cli " + methodname + " " + args + "\n";
+    return "> corallium-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

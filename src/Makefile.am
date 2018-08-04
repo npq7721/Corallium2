@@ -72,15 +72,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += monkeyd
+  bin_PROGRAMS += coralliumd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += monkey-cli monkey-tx
+  bin_PROGRAMS += corallium-cli corallium-tx
 endif
 
 .PHONY: FORCE
-# monkey core #
+# corallium core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -183,7 +183,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between monkeyd and monkey-qt
+# server: shared between coralliumd and corallium-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -229,7 +229,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between monkeyd and monkey-qt, but only linked
+# wallet: shared between coralliumd and corallium-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -292,7 +292,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_skein.h \
   crypto/sph_types.h
 
-# common: shared between monkeyd, and monkey-qt and non-server tools
+# common: shared between coralliumd, and corallium-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -350,7 +350,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between monkey-cli and monkey-qt
+# cli: shared between corallium-cli and corallium-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -360,7 +360,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-monkeyd_LDADD = \
+coralliumd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -371,26 +371,26 @@ monkeyd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-monkeyd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+coralliumd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-monkeyd_LDADD += libbitcoin_wallet.a
+coralliumd_LDADD += libbitcoin_wallet.a
 endif
-monkeyd_SOURCES = monkeyd.cpp
+coralliumd_SOURCES = coralliumd.cpp
 #
 
 if TARGET_WINDOWS
-monkeyd_SOURCES += monkeyd-res.rc
+coralliumd_SOURCES += coralliumd-res.rc
 endif
 
-monkeyd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-monkeyd_CPPFLAGS = $(BITCOIN_INCLUDES)
-monkeyd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+coralliumd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+coralliumd_CPPFLAGS = $(BITCOIN_INCLUDES)
+coralliumd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# monkey-cli binary #
-monkey_cli_LDADD = \
+# corallium-cli binary #
+corallium_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
@@ -399,14 +399,14 @@ monkey_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-monkey_cli_SOURCES = \
-  monkey-cli.cpp
+corallium_cli_SOURCES = \
+  corallium-cli.cpp
 
-monkey_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+corallium_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# monkey-tx binary #
-monkey_tx_LDADD = \
+# corallium-tx binary #
+corallium_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -415,15 +415,15 @@ monkey_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-monkey_tx_SOURCES = monkey-tx.cpp
-monkey_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+corallium_tx_SOURCES = corallium-tx.cpp
+corallium_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-monkey_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+corallium_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-monkey_cli_SOURCES += monkey-cli-res.rc
+corallium_cli_SOURCES += corallium-cli-res.rc
 endif
-monkey_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+corallium_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

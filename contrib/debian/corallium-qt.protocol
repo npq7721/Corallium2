@@ -1,6 +1,6 @@
 [Protocol]
-exec=monkey-qt '%u'
-protocol=monkey
+exec=corallium-qt '%u'
+protocol=corallium
 input=none
 output=none
 helper=true

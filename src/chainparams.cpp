@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Monkey developers
+// Copyright (c) 2017 The Corallium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -80,6 +80,36 @@ static const Checkpoints::CCheckpointData dataRegtest = {
     0,
     100};
 
+void MineGenesis(CBlock genesis)
+{
+    printf("Searching for genesis block...\n");
+    // This will figure out a valid hash and Nonce if you're
+    // creating a different genesis block:
+    uint256 hashTarget = ~uint256(0) >> 20;
+    uint256 thash;
+    while(true)
+    {
+        thash = genesis.GetHash();
+        if (thash <= hashTarget)
+            break;
+        if ((genesis.nNonce & 0xFFF) == 0)
+        {
+            //printf("nonce %08X: hash = %s (target = %s)\n", genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+        }
+        ++genesis.nNonce;
+        if (genesis.nNonce == 0)
+        {
+            //printf("NONCE WRAPPED, incrementing time\n");
+            ++genesis.nTime;
+        }
+    }
+    printf("block.nTime = %u \n", genesis.nTime);
+    printf("block.nNonce = %u \n", genesis.nNonce);
+    printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+    printf("block.merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+    std::fflush(stdout);
+}
+
 class CMainParams : public CChainParams
 {
 public:
@@ -104,15 +134,15 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Monkey: 1 minute
-        nTargetSpacing = 2 * 60;  // Monkey: 2 minutes
+        nTargetTimespan = 1 * 60; // Corallium: 1 minute
+        nTargetSpacing = 2 * 60;  // Corallium: 2 minutes
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
-        nModifierUpdateBlock = 1; // we use the version 2 for MONK
+        nModifierUpdateBlock = 1; // we use the version 2 for CRLM
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -131,7 +161,7 @@ public:
          * nonce: 20664569
          * genesis_hash: 0000072442df3910d2d8ff1f3bcfe6234025d1bd532f7182927cd559b8e9e386
          */
-        const char* pszTimestamp = "2018-07-25 Coinbase Now Offers Crypto currency Gift Cards in Europe and Australia";
+        const char* pszTimestamp =  "People are not going to care about animal conservation unless they think that animals are worthwhile";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -142,31 +172,29 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1532542535;
+        genesis.nTime = 1533354644;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 20664569;
-
-        hashGenesisBlock = genesis.GetHash();
+        MineGenesis(genesis);
+        //hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000072442df3910d2d8ff1f3bcfe6234025d1bd532f7182927cd559b8e9e386"));
         assert(genesis.hashMerkleRoot == uint256("0xb2d915af3eadbd9f7a0c2d625f9c43bafc20f7a5e19f9d5d0ba858e433ccabcd"));
 
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("seed1.monk3y.xyz", "seed1.monk3y.xyz"));
-        vSeeds.push_back(CDNSSeedData("seed2.monk3y.xyz", "seed2.monk3y.xyz"));
-        vSeeds.push_back(CDNSSeedData("seed3.monk3y.xyz", "seed3.monk3y.xyz"));
+        vSeeds.push_back(CDNSSeedData("explorer", "140.82.0.37"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 51);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 55);
-        // Monkey BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // Corallium BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // Monkey BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // Corallium BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // Monkey BIP44 coin type is '222' (0x800000de)
+        // Corallium BIP44 coin type is '222' (0x800000de)
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >();
 
-        convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+        //convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
@@ -212,8 +240,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Monkey: 1 minute
-        nTargetSpacing = 2 * 60;  // Monkey: 2 minutes
+        nTargetTimespan = 1 * 60; // Corallium: 1 minute
+        nTargetSpacing = 2 * 60;  // Corallium: 2 minutes
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -233,11 +261,11 @@ public:
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 127);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 196);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 63);
-        // Testnet Monkey BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet Corallium BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Monkey BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet Corallium BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Monkey BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet Corallium BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -282,8 +310,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Monkey: 1 day
-        nTargetSpacing = 2 * 60;        // Monkey: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Corallium: 1 day
+        nTargetSpacing = 2 * 60;        // Corallium: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1532542535;
         genesis.nBits = 0x207fffff;

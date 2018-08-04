@@ -177,6 +177,6 @@
     </message>
     </context>
 <context>
-    <name>monkey-core</name>
+    <name>corallium-core</name>
     </context>
 </TS>

@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите MONK адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your CRLM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите CRLM адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите MONK адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your CRLM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите CRLM адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,16 +164,16 @@
         <translation>Потвърдете криптирането на портфейла</translation>
     </message>
     <message>
-        <source>Monkey will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MONKs from being stolen by malware infecting your computer.</source>
-        <translation>Monkey сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия MONK от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>Corallium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRLMs from being stolen by malware infecting your computer.</source>
+        <translation>Corallium сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия CRLM от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да криптирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONK&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако криптирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ MONK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRLM&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако криптирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ CRLM&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -231,16 +231,16 @@
         <translation>&amp;BIP 38 криптиране</translation>
     </message>
     <message>
-        <source>Enter a MONK Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете MONK адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания частен ключ.</translation>
+        <source>Enter a CRLM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете CRLM адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания частен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>MONK адреса, с който да подпишете съобщението</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>CRLM адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този MONK адрес</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този CRLM адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -410,8 +410,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>MONK адреса, с който да подпишете съобщението</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>CRLM адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -434,8 +434,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този MONK адрес</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този CRLM адрес</translation>
     </message>
     </context>
 <context>
@@ -497,6 +497,6 @@
     </message>
 </context>
 <context>
-    <name>monkey-core</name>
+    <name>corallium-core</name>
 </context>
 </TS>

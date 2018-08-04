@@ -22,7 +22,7 @@
 #define MASTERNODE_REMOVAL_SECONDS (130 * 60)
 #define MASTERNODE_CHECK_SECONDS 5
 
-#define MASTERNODE_COLLATERAL 2000
+#define MASTERNODE_COLLATERAL 2500
 
 using namespace std;
 
@@ -102,7 +102,7 @@ public:
 };
 
 //
-// The Masternode Class. It contains the input of the MONK collateral, signature to prove
+// The Masternode Class. It contains the input of the CRLM collateral, signature to prove
 // it's the one who own that ip address and code for calculating the payment election.
 //
 class CMasternode

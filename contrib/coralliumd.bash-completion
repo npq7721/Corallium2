@@ -1,12 +1,12 @@
-# bash programmable completion for monkeyd(1) and monkey-cli(1)
+# bash programmable completion for coralliumd(1) and corallium-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have monkeyd && {
+have coralliumd && {
 
-# call $monkeyd for RPC
-_monkey_rpc() {
+# call $coralliumd for RPC
+_corallium_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _monkey_rpc() {
                 ;;
         esac
     done
-    $monkeyd "${rpcargs[@]}" "$@"
+    $coralliumd "${rpcargs[@]}" "$@"
 }
 
-# Add monkey accounts to COMPREPLY
-_monkey_accounts() {
+# Add corallium accounts to COMPREPLY
+_corallium_accounts() {
     local accounts
-    accounts=$(_monkey_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_corallium_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_monkeyd() {
+_coralliumd() {
     local cur prev words=() cword
-    local monkeyd
+    local coralliumd
 
-    # save and use original argument to invoke monkeyd
-    # monkeyd might not be in $PATH
-    monkeyd="$1"
+    # save and use original argument to invoke coralliumd
+    # coralliumd might not be in $PATH
+    coralliumd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -53,7 +53,7 @@ _monkeyd() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _monkey_accounts
+                _corallium_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _monkeyd() {
                 return 0
                 ;;
             move|setaccount)
-                _monkey_accounts
+                _corallium_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _monkeyd() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _monkey_accounts
+            _corallium_accounts
             return 0
             ;;
     esac
@@ -114,12 +114,12 @@ _monkeyd() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($monkeyd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($coralliumd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_monkey_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_corallium_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -133,7 +133,7 @@ _monkeyd() {
     esac
 }
 
-complete -F _monkeyd monkeyd monkey-cli
+complete -F _coralliumd coralliumd corallium-cli
 }
 
 # Local variables:

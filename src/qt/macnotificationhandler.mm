@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"vision.monkey.Monkey-Qt";
+        return @"vision.corallium.Corallium-Qt";
     } else {
         return [self __bundleIdentifier];
     }

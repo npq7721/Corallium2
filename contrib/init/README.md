@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: monkeyd.service
-Upstart: monkeyd.conf
-OpenRC:  monkeyd.openrc
-         monkeyd.openrcconf
-CentOS:  monkeyd.init
+SystemD: coralliumd.service
+Upstart: coralliumd.conf
+OpenRC:  coralliumd.openrc
+         coralliumd.openrcconf
+CentOS:  coralliumd.init
 
 have been made available to assist packagers in creating node packages here.
 

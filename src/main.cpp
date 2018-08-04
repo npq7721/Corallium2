@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2017 The Monkey developers
+// Copyright (c) 2017-2017 The Corallium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -47,7 +47,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "Monkey cannot be compiled without assertions."
+#error "Corallium cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -1615,36 +1615,255 @@ double ConvertBitsToDouble(unsigned int nBits)
     return dDiff;
 }
 
+float getRegularBlockValue(int nHeight) {
+	if(nHeight <= 65700) {
+		return 6.5;
+	}
+	if(nHeight <= 131400) {
+		return 5.8;
+	}
+	if(nHeight <= 197100) {
+		return 5.265;
+	}
+	if(nHeight <= 262800) {
+		return 4.7385;
+	}
+	if(nHeight <= 525600) {
+		return 4.2647;
+	}
+	if(nHeight <= 788400) {
+		return 3.8382;
+	}
+	if(nHeight <= 1051200) {
+		return 3.4544;
+	}
+	if(nHeight <= 131400) {
+		return 3.1089;
+	}
+	if(nHeight <= 1576800) {
+		return 2.7980;
+	}
+	if(nHeight <= 1839600) {
+		return 2.5182;
+	}
+	if(nHeight <= 2102400) {
+		return 2.2664;
+	}
+	if(nHeight <= 2365200) {
+		return 2.0398;
+	}
+	if(nHeight <= 2628000) {
+		return 1.8358;
+	}
+	if(nHeight <= 2890800) {
+		return 1.65221;
+	}
+	if(nHeight <= 3153600) {
+		return 1.48699;
+	}
+	if(nHeight <= 3416400) {
+		return 1.33829;
+	}
+	if(nHeight <= 3679200) {
+		return 1.20446;
+	}
+	return 1.08402;
+}
+
+float getSuperBlockValue(int nHeight) {
+	int endDigit = nHeight % 10;
+	if(endDigit != 6 && endDigit != 9) {
+		return -1;
+	}
+	if(nHeight <= 65700) {
+		return 12;
+	}
+	if(nHeight <= 131400) {
+		return 10.8;
+	}
+	if(nHeight <= 197100) {
+		return 9.72;
+	}
+	if(nHeight <= 262800) {
+		return 8.7480;
+	}
+	if(nHeight <= 525600) {
+		return 7.8732;
+	}
+	if(nHeight <= 788400) {
+		return 7.0859;
+	}
+	if(nHeight <= 1051200) {
+		return 6.3773;
+	}
+	if(nHeight <= 131400) {
+		return 5.7396;
+	}
+	if(nHeight <= 1576800) {
+		return 5.1656;
+	}
+	if(nHeight <= 1839600) {
+		return 4.6490;
+	}
+	if(nHeight <= 2102400) {
+		return 4.1841;
+	}
+	if(nHeight <= 2365200) {
+		return 3.7657;
+	}
+	if(nHeight <= 2628000) {
+		return 3.3892;
+	}
+	if(nHeight <= 2890800) {
+		return 3.05024;
+	}
+	if(nHeight <= 3153600) {
+		return 2.74522;
+	}
+	if(nHeight <= 3416400) {
+		return 2.47069;
+	}
+	if(nHeight <= 3679200) {
+		return 2.22362;
+	}
+	return 2.00126;
+}
+
+float getUtraBlockValue(int nHeight) {
+	int endDigit = nHeight % 10;
+	if(endDigit != 2) {
+		return -1;
+	}
+	if(nHeight <= 65700) {
+		return 22;
+	}
+	if(nHeight <= 131400) {
+		return 19.8;
+	}
+	if(nHeight <= 197100) {
+		return 17.82;
+	}
+	if(nHeight <= 262800) {
+		return 16.038;
+	}
+	if(nHeight <= 525600) {
+		return 14.4342;
+	}
+	if(nHeight <= 788400) {
+		return 12.9908;
+	}
+	if(nHeight <= 1051200) {
+		return 11.6917;
+	}
+	if(nHeight <= 131400) {
+		return 10.5225;
+	}
+	if(nHeight <= 1576800) {
+		return 9.4703;
+	}
+	if(nHeight <= 1839600) {
+		return 8.5233;
+	}
+	if(nHeight <= 2102400) {
+		return 7.6709;
+	}
+	if(nHeight <= 2365200) {
+		return 6.9038;
+	}
+	if(nHeight <= 2628000) {
+		return 6.2134;
+	}
+	if(nHeight <= 2890800) {
+		return 5.59210;
+	}
+	if(nHeight <= 3153600) {
+		return 5.03289;
+	}
+	if(nHeight <= 3416400) {
+		return 4.52960;
+	}
+	if(nHeight <= 3679200) {
+		return 4.07664;
+	}
+	return 3.66898;
+}
+
+float getLuckyBlockValue(int nHeight) {
+	int endDigit = nHeight % 1000;
+	if(endDigit != 777) {
+		return -1;
+	}
+	if(nHeight <= 262800) {
+		return 77;
+	}
+	if(nHeight <= 525600) {
+		return 69.30;
+	}
+	if(nHeight <= 788400) {
+		return 62.37;
+	}
+	if(nHeight <= 1051200) {
+		return 56.13;
+	}
+	if(nHeight <= 131400) {
+		return 50.52;
+	}
+	if(nHeight <= 1576800) {
+		return 45.47;
+	}
+	if(nHeight <= 1839600) {
+		return 40.92;
+	}
+	if(nHeight <= 2102400) {
+		return 36.83;
+	}
+	if(nHeight <= 2365200) {
+		return 33.15;
+	}
+	if(nHeight <= 2628000) {
+		return 29.83;
+	}
+	if(nHeight <= 2890800) {
+		return 26.85;
+	}
+	if(nHeight <= 3153600) {
+		return 24.16;
+	}
+	if(nHeight <= 3416400) {
+		return 21.75;
+	}
+	if(nHeight <= 3679200) {
+		return 19.57;
+	}
+	return 17.62;
+}
+
 int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 0;
 
-    if (nHeight == 0)
-        nSubsidy = 2160000 * COIN;
-    else if (nHeight <= 5000)
-        nSubsidy = 1 * COIN;
-    else if (nHeight > 5000 && nHeight <= 25000)
-        nSubsidy = 15 * COIN;
-    else if (nHeight > 25000 && nHeight <= 100000)
-        nSubsidy = 12.5 * COIN;
-    else if (nHeight > 100000 && nHeight <= 1000000)
-        nSubsidy = 8 * COIN;
-    else if (nHeight > 1000000 && nHeight <= 2000000)
-        nSubsidy = 4 * COIN;
-    else if (nHeight > 2000000 && nHeight <= 3000000)
-        nSubsidy = 2 * COIN;
-    else
-        nSubsidy = 1 * COIN;
-
-    // Check if we reached the coin max supply.
-    int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-
-    if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
-        nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
-
-    if (nMoneySupply >= Params().MaxMoneyOut())
-        nSubsidy = 0;
-
+    if (nHeight == 0) {
+    	nSubsidy = 0.1 * COIN;
+    }
+    if (nHeight == 1) {
+        nSubsidy = 411569 * COIN; // premine
+    } else if(nHeight <= 10080) {
+    	nSubsidy = 1 * COIN/10;
+    } else if(nHeight <= 3942000) {
+    	float value = getLuckyBlockValue(nHeight);
+    	if(value == -1) {
+    		value = getSuperBlockValue(nHeight);
+    		if(value == -1) {
+    			value = getUtraBlockValue(nHeight);
+    			if(value == -1) {
+    				value = getRegularBlockValue(nHeight);
+    			}
+    		}
+    	}
+    	nSubsidy = value * COIN;
+    } else {
+    	nSubsidy = 0;
+    }
     return nSubsidy;
 }
 
@@ -1652,12 +1871,13 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 
-    // No rewards till masternode activation.
-    if (nHeight < Params().LAST_POW_BLOCK() || blockValue == 0)
-        return 0;
-
-    // Check if we reached coin supply
-    ret = blockValue * 0.85; // 85% of block reward
+    if (nHeight > Params().StartMasternodePayments()) {
+    	if(nHeight <= 31680) {
+    		ret = blockValue * 0.1;
+    	} else {
+    		ret = blockValue * .80;
+    	}
+    }
 
     return ret;
 }
@@ -2047,7 +2267,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("monkey-scriptch");
+    RenameThread("corallium-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -3141,7 +3361,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // MONK
+        // CRLM
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -4525,7 +4745,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             return false;
         }
 
-        // MONK: We use certain sporks during IBD, so check to see if they are
+        // CRLM: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
                 !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2);

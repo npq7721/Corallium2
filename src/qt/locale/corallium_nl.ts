@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw MONK adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your CRLM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw CRLM adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your MONK addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw MONK adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your CRLM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw CRLM adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>Monkey will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MONKs from being stolen by malware infecting your computer.</source>
-        <translation>Monkey zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw MONKs stelen.</translation>
+        <source>Corallium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRLMs from being stolen by malware infecting your computer.</source>
+        <translation>Corallium zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw CRLMs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONK&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW MONK VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRLM&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW CRLM VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -231,16 +231,16 @@
         <translation>&amp;BIP 38 Versleuteling</translation>
     </message>
     <message>
-        <source>Enter a MONK Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een MONK adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <source>Enter a CRLM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een CRLM adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>Het MONK adres om het bericht met te ondertekenen</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>Het CRLM adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het MONK adres bezit</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het CRLM adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -295,12 +295,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>Het MONK adres waarmee het bericht was ondertekend</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>Het CRLM adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde MONK adres</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde CRLM adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,16 +590,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Kern</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Kern</translation>
     </message>
     <message>
-        <source>Send coins to a MONK address</source>
-        <translation>Verstuur munten naar een MONK adres</translation>
+        <source>Send coins to a CRLM address</source>
+        <translation>Verstuur munten naar een CRLM adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monkey: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en monkey: URI's)</translation>
+        <source>Request payments (generates QR codes and corallium: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en corallium: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -610,24 +610,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Monkey Core</source>
-        <translation>&amp;Over Monkey Kern</translation>
+        <source>&amp;About Corallium Core</source>
+        <translation>&amp;Over Corallium Kern</translation>
     </message>
     <message>
-        <source>Show information about Monkey Core</source>
-        <translation>Toon informatie over Monkey Kern</translation>
+        <source>Show information about Corallium Core</source>
+        <translation>Toon informatie over Corallium Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for Monkey</source>
-        <translation>Wijzig Monkey configuratie opties</translation>
+        <source>Modify configuration options for Corallium</source>
+        <translation>Wijzig Corallium configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your MONK addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw MONK adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your CRLM addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw CRLM adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MONK addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde MONK adressen</translation>
+        <source>Verify messages to ensure they were signed with specified CRLM addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde CRLM adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -658,8 +658,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a monkey: URI or payment request</source>
-        <translation>Open een monkey: URI of betaalverzoek</translation>
+        <source>Open a corallium: URI or payment request</source>
+        <translation>Open een corallium: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -670,12 +670,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Monkey Core client</source>
-        <translation>Monkey Core client</translation>
+        <source>Corallium Core client</source>
+        <translation>Corallium Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Monkey network</source>
-        <translation><numerusform>%n actieve verbinding(en) naar het Monkey netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Monkey netwerk</numerusform></translation>
+        <source>%n active connection(s) to Corallium network</source>
+        <translation><numerusform>%n actieve verbinding(en) naar het Corallium netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Corallium netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -817,8 +817,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (monkey.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (monkey.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (corallium.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (corallium.conf).</translation>
     </message>
 </context>
 <context>
@@ -1034,8 +1034,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MONK address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig MONK adres.</translation>
+        <source>The entered address "%1" is not a valid CRLM address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig CRLM adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1064,16 +1064,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Kern</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Monkey Core</source>
-        <translation>Over Monkey Core</translation>
+        <source>About Corallium Core</source>
+        <translation>Over Corallium Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1103,16 +1103,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to Monkey Core.</source>
-        <translation>Welkom bij Monkey Core</translation>
+        <source>Welcome to Corallium Core.</source>
+        <translation>Welkom bij Corallium Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Kern</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1309,20 +1309,20 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Monkey after logging in to the system.</source>
-        <translation>Monkey automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start Corallium after logging in to the system.</source>
+        <translation>Corallium automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start Monkey on system login</source>
-        <translation>&amp;Monkey starten bij systeemlogin</translation>
+        <source>&amp;Start Corallium on system login</source>
+        <translation>&amp;Corallium starten bij systeemlogin</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Monkey.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Monkey.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Corallium.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Corallium.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1473,8 +1473,8 @@ MultiSend: %1</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a MONK address (e.g. %1)</source>
-        <translation>Voer een MONK adres in (b.v. %1)</translation>
+        <source>Enter a CRLM address (e.g. %1)</source>
+        <translation>Voer een CRLM adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1675,8 +1675,8 @@ MultiSend: %1</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the Monkey RPC console.</source>
-        <translation>Welkom bij de Monkey RPC console.</translation>
+        <source>Welcome to the Corallium RPC console.</source>
+        <translation>Welkom bij de Corallium RPC console.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1883,8 +1883,8 @@ MultiSend: %1</translation>
         <translation>Wijzig:</translation>
     </message>
     <message>
-        <source>0 MONK</source>
-        <translation>0 MONK</translation>
+        <source>0 CRLM</source>
+        <translation>0 CRLM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -1971,8 +1971,8 @@ MultiSend: %1</translation>
         <translation>gebruikt</translation>
     </message>
     <message>
-        <source>Warning: Invalid MONK address</source>
-        <translation>Waarschuwing: Ongeldig MONK adres</translation>
+        <source>Warning: Invalid CRLM address</source>
+        <translation>Waarschuwing: Ongeldig CRLM adres</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2026,8 +2026,8 @@ MultiSend: %1</translation>
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The MONK address to send the payment to</source>
-        <translation>Het MONK adres om de betaling naar te verzenden</translation>
+        <source>The CRLM address to send the payment to</source>
+        <translation>Het CRLM adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2081,8 +2081,8 @@ MultiSend: %1</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Monkey Core is shutting down...</source>
-        <translation>Monkey Core is aan het afsluiten...</translation>
+        <source>Corallium Core is shutting down...</source>
+        <translation>Corallium Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2100,8 +2100,8 @@ MultiSend: %1</translation>
         <translation>&amp;Onderteken Bericht</translation>
     </message>
     <message>
-        <source>The MONK address to sign the message with</source>
-        <translation>Het MONK adres om het bericht met te ondertekenen</translation>
+        <source>The CRLM address to sign the message with</source>
+        <translation>Het CRLM adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2132,16 +2132,16 @@ MultiSend: %1</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MONK address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het MONK adres bezit</translation>
+        <source>Sign the message to prove you own this CRLM address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het CRLM adres bezit</translation>
     </message>
     <message>
-        <source>The MONK address the message was signed with</source>
-        <translation>Het MONK adres waarmee het bericht was ondertekend</translation>
+        <source>The CRLM address the message was signed with</source>
+        <translation>Het CRLM adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MONK address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde MONK adres</translation>
+        <source>Verify the message to ensure it was signed with the specified CRLM address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde CRLM adres</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2211,8 +2211,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Monkey Core</source>
-        <translation>Monkey Kern</translation>
+        <source>Corallium Core</source>
+        <translation>Corallium Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2231,8 +2231,8 @@ MultiSend: %1</translation>
         <translation>De PIVX Core ontwikkelaars</translation>
     </message>
     <message>
-        <source>The Monkey Core developers</source>
-        <translation>De Monkey Core ontwikkelaars</translation>
+        <source>The Corallium Core developers</source>
+        <translation>De Corallium Core ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2583,7 +2583,7 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>monkey-core</name>
+    <name>corallium-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(standaard: %s)</translation>
@@ -2625,8 +2625,8 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2015-%i The PIVX Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The Monkey Core Developers</source>
-        <translation>Copyright (C) 2017-%i The Monkey Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2017-%i The Corallium Core Developers</source>
+        <translation>Copyright (C) 2017-%i The Corallium Core Ontwikkelaars</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>

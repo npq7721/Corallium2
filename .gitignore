@@ -7,12 +7,12 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/monkey
-src/monkeyd
-src/monkey-cli
-src/monkey-tx
-src/test/test_monkey
-src/qt/test/test_monkey-qt
+src/corallium
+src/coralliumd
+src/corallium-cli
+src/corallium-tx
+src/test/test_corallium
+src/qt/test/test_corallium-qt
 
 # autoreconf
 Makefile.in
@@ -38,8 +38,8 @@ confdefs.h
 conftest.cpp
 conftest.err
 libtool
-src/config/monkey-config.h
-src/config/monkey-config.h.in
+src/config/corallium-config.h
+src/config/corallium-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -62,7 +62,7 @@ src/qt/test/moc*.cpp
 *.pyc
 *.o
 *.o-*
-.monkey
+.corallium
 *.a
 *.pb.cc
 *.pb.h
@@ -81,12 +81,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-monkey-qt
-Monkey-Qt.app
+corallium-qt
+Corallium-Qt.app
 
 # Unit-tests
 Makefile.test
-monkey-qt_test
+corallium-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -102,7 +102,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_monkey.coverage/
+test_corallium.coverage/
 total.coverage/
 coverage_percent.txt
 

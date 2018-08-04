@@ -1,36 +1,36 @@
-Monkey Core
+Corallium Core
 =====================
 
 Setup
 ---------------------
-[Monkey Core](http://monkey.vision) is the original Monkey client and it builds the backbone of the network. However, it downloads and stores the entire history of Monkey transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Corallium Core](http://corallium.vision) is the original Corallium client and it builds the backbone of the network. However, it downloads and stores the entire history of Corallium transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Monkey on your native platform.
+The following are some helpful notes on how to run Corallium on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/monkey-qt (GUI, 32-bit) or bin/32/monkeyd (headless, 32-bit)
-- bin/64/monkey-qt (GUI, 64-bit) or bin/64/monkeyd (headless, 64-bit)
+- bin/32/corallium-qt (GUI, 32-bit) or bin/32/coralliumd (headless, 32-bit)
+- bin/64/corallium-qt (GUI, 64-bit) or bin/64/coralliumd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run monkey-qt.exe.
+Unpack the files into a directory, and then run corallium-qt.exe.
 
 ### OSX
 
-Drag Monkey-Qt to your applications folder, and then run Monkey-Qt.
+Drag Corallium-Qt to your applications folder, and then run Corallium-Qt.
 
 ### Need Help?
 
-* Join our Discord server [Discord Server](https://discord.monkey.vision)
+* Join our Discord server [Discord Server](https://discord.corallium.vision)
 
 Building
 ---------------------
-The following are developer notes on how to build Monkey on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Corallium on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -38,7 +38,7 @@ The following are developer notes on how to build Monkey on your native platform
 
 Development
 ---------------------
-The Monkey repo's [root README](https://github.com/monkeyproject/monkeyv2/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Corallium repo's [root README](https://github.com/coralliumproject/coralliumv2/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
