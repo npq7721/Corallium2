@@ -141,7 +141,7 @@ public:
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 1000;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 1; // we use the version 2 for CRLM
 
         /**
