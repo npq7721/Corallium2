@@ -53,11 +53,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000007fb85ad3c3a20bac65d42a9e582dca49fa6247313bf93f9e152d4f54268"));
+    (0, uint256("0x000007915484c1801094d3a47ac7ec821d446b9b5211eea5cf54cc38f35d97c6"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-	1533354644, // * UNIX timestamp of last checkpoint block
+	1533798792, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -172,18 +172,22 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1533354644;
+        genesis.nTime = 1533798792;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21141926;
-        //MineGenesis(genesis);
-        hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000007fb85ad3c3a20bac65d42a9e582dca49fa6247313bf93f9e152d4f54268"));
+        genesis.nNonce = 21946518;
+        MineGenesis(genesis);
+        //hashGenesisBlock = genesis.GetHash();
+        assert(hashGenesisBlock == uint256("0x000007915484c1801094d3a47ac7ec821d446b9b5211eea5cf54cc38f35d97c6"));
         assert(genesis.hashMerkleRoot == uint256("0x0f51078cfb1c832659fdb0db7b08e80f88804f79f8d0d64c360574824e54fb50"));
 
         // DNS Seeding
         vSeeds.push_back(CDNSSeedData("explorer", "140.82.0.37"));
-
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 51);
+        vSeeds.push_back(CDNSSeedData("seed1", "140.82.61.204"));
+        vSeeds.push_back(CDNSSeedData("seed2", "45.77.149.229"));
+        vSeeds.push_back(CDNSSeedData("seed3", "149.28.45.103"));
+        vSeeds.push_back(CDNSSeedData("seed4", "140.82.63.218"));
+        vSeeds.push_back(CDNSSeedData("seed5", "149.28.231.81"));
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 55);
         // Corallium BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
