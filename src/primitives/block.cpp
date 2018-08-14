@@ -189,6 +189,7 @@ bool CBlock::SignBlock(const CKeyStore& keystore)
                 return false;
 
             //vector<unsigned char> vchSig;
+            LogPrintf("-----Sign-block TX_PUBKEYHASH--------\n");
             if (!key.Sign(GetHash(), vchBlockSig))
                  return false;
 
@@ -204,6 +205,7 @@ bool CBlock::SignBlock(const CKeyStore& keystore)
                 return false;
 
             //vector<unsigned char> vchSig;
+            LogPrintf("-----Sign-block TX_PUBKEY--------\n");
             if (!key.Sign(GetHash(), vchBlockSig))
                  return false;
 

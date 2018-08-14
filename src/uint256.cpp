@@ -19,8 +19,10 @@ base_uint<BITS>::base_uint(const std::string& str)
 template <unsigned int BITS>
 base_uint<BITS>::base_uint(const std::vector<unsigned char>& vch)
 {
-    if (vch.size() != sizeof(pn))
+    if (vch.size() != sizeof(pn)) {
+    	printf("vch.size() %d vch=%s, pn.size=%d\n", vch.size(), vch.data(), sizeof(pn));
         throw uint_error("Converting vector of wrong size to base_uint");
+    }
     memcpy(pn, &vch[0], sizeof(pn));
 }
 

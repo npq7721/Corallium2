@@ -212,7 +212,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "0431a3e4fcb29011df5ac2e47e0da085f9378c7de8174cf9b7ccd8959235c4be2be224b5880c6036c5f7718c12c988c39db7f2af0e392748cca23726a4cfd97815";
         strMasternodePoolDummyAddress = "Mp2YtB2oub5Zbsvu2NUABYmbfzqrnPAD9R";
-        nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis creation
+        nStartMasternodePayments = 1000; // 24 hours after genesis creation
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }

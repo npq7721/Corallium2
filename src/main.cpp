@@ -1872,8 +1872,8 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 
-    if (nHeight > Params().StartMasternodePayments()) {
-    	if(nHeight <= 31680) {
+    if (nHeight > 1000) {
+    	if(nHeight <= 1300) {
     		ret = blockValue * 0.1;
     	} else {
     		ret = blockValue * .80;

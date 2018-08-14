@@ -520,10 +520,14 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         //Stake miner main
         if (fProofOfStake) {
             LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
-
-            if (!pblock->SignBlock(*pwallet)) {
-                LogPrintf("BitcoinMiner(): Signing new block failed \n");
-                continue;
+            try {
+				if (!pblock->SignBlock(*pwallet)) {
+					LogPrintf("BitcoinMiner(): Signing new block failed \n");
+					continue;
+				}
+            } catch (std::exception& e) {
+            	  LogPrintf("BitcoinMiner():  Signing new block failed with exception %s\n", e.what());
+            	  continue;
             }
 
             LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
