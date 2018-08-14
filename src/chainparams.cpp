@@ -175,8 +175,8 @@ public:
         genesis.nTime = 1533798792;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 21946518;
-        MineGenesis(genesis);
-        //hashGenesisBlock = genesis.GetHash();
+        //MineGenesis(genesis);
+        hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x000007915484c1801094d3a47ac7ec821d446b9b5211eea5cf54cc38f35d97c6"));
         assert(genesis.hashMerkleRoot == uint256("0x0f51078cfb1c832659fdb0db7b08e80f88804f79f8d0d64c360574824e54fb50"));
 
