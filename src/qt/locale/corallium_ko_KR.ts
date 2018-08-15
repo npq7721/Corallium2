@@ -983,8 +983,8 @@ Address: %4
         <translation>중간 높음</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 umonk per input.</source>
-        <translation>입력당 +/- %1 umonk을 변경할 수 있습니다.</translation>
+        <source>Can vary +/- %1 ucrlm per input.</source>
+        <translation>입력당 +/- %1 ucrlm을 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>medium</source>

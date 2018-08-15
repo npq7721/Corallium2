@@ -502,9 +502,15 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     if (!streamConfig.good()) {
         // Create empty corallium.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
-        if (configFile != NULL)
-            fclose(configFile);
-        return; // Nothing to read, so just return
+        if (configFile != NULL) {
+			AddSeedsToConfigFile(configFile);
+			fclose(configFile);
+			return;
+			ReadConfigFile(mapSettingsRet, mapMultiSettingsRet);
+	   } else {
+			LogPrintf("corallium.conf file not found or can't be created\n");
+			return; // Nothing to read, so just return
+	   }
     }
 
     set<string> setOptions;
@@ -521,6 +527,14 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     }
     // If datadir is changed in .conf file:
     ClearDatadirCache();
+}
+void AddSeedsToConfigFile(FILE* configFile) {
+	fprintf(configFile,"addnode=140.82.0.37\r\n");
+	fprintf(configFile,"addnode=140.82.61.204\r\n");
+	fprintf(configFile,"addnode=45.77.149.229\r\n");
+	fprintf(configFile,"addnode=149.28.45.103\r\n");
+	fprintf(configFile,"addnode=140.82.63.218\r\n");
+	fprintf(configFile,"addnode=149.28.231.81\r\n");
 }
 
 #ifndef WIN32

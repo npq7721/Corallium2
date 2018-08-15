@@ -203,10 +203,10 @@ QT_TRANSLATE_NOOP("corallium-core", ""
 QT_TRANSLATE_NOOP("corallium-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("corallium-core", "(37233 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("corallium-core", "(10233 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("corallium-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("corallium-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("corallium-core", "(must be 37233 for mainnet)"),
+QT_TRANSLATE_NOOP("corallium-core", "(must be 10233 for mainnet)"),
 QT_TRANSLATE_NOOP("corallium-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("corallium-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("corallium-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

@@ -1003,8 +1003,8 @@ Address: %4
         <translation>medium-high</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 umonk per input.</source>
-        <translation>Can vary +/- %1 umonk per input.</translation>
+        <source>Can vary +/- %1 ucrlm per input.</source>
+        <translation>Can vary +/- %1 ucrlm per input.</translation>
     </message>
     <message>
         <source>n/a</source>

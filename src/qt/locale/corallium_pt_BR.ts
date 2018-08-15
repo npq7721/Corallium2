@@ -964,8 +964,8 @@ MultiSend: %1</translation>
         <translation>médio-alto</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 umonk per input.</source>
-        <translation>pode variar entre +/-%1 umonk por input</translation>
+        <source>Can vary +/- %1 ucrlm per input.</source>
+        <translation>pode variar entre +/-%1 ucrlm por input</translation>
     </message>
     <message>
         <source>medium</source>

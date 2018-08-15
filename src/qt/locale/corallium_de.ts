@@ -1014,8 +1014,8 @@ Adresse: %4</translation>
         <translation>mittel-hoch</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 umonk per input.</source>
-        <translation>Kann um +/- %1 umonk pro Eingang variieren.</translation>
+        <source>Can vary +/- %1 ucrlm per input.</source>
+        <translation>Kann um +/- %1 ucrlm pro Eingang variieren.</translation>
     </message>
     <message>
         <source>medium</source>

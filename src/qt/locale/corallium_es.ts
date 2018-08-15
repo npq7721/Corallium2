@@ -999,8 +999,8 @@ MultiEnvío: %1</translation>
         <translation>medio-alta</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 umonk per input.</source>
-        <translation>Puede variar +/- %1 umonk por entrada.</translation>
+        <source>Can vary +/- %1 ucrlm per input.</source>
+        <translation>Puede variar +/- %1 ucrlm por entrada.</translation>
     </message>
     <message>
         <source>medium</source>
