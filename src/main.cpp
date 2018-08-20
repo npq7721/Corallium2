@@ -1619,16 +1619,16 @@ float getRegularBlockValue(int nHeight) {
 	if(nHeight < 1570) {
 		return 6.5;
 	}
-	if(nHeight < 131400) {
+	if(nHeight < 11000) {
 		return 5.8;
 	}
-	if(nHeight < 197100) {
+	if(nHeight < 12000) {
 		return 5.265;
 	}
-	if(nHeight < 262800) {
+	if(nHeight < 13000) {
 		return 4.7385;
 	}
-	if(nHeight < 525600) {
+	if(nHeight < 14000) {
 		return 4.2647;
 	}
 	if(nHeight < 788400) {
@@ -1678,16 +1678,16 @@ float getSuperBlockValue(int nHeight) {
 	if(nHeight < 1570) {
 		return 12;
 	}
-	if(nHeight < 131400) {
+	if(nHeight < 11300) {
 		return 10.8;
 	}
-	if(nHeight < 197100) {
+	if(nHeight < 12200) {
 		return 9.72;
 	}
-	if(nHeight < 262800) {
+	if(nHeight < 13200) {
 		return 8.7480;
 	}
-	if(nHeight < 525600) {
+	if(nHeight < 14200) {
 		return 7.8732;
 	}
 	if(nHeight < 788400) {
@@ -1737,16 +1737,16 @@ float getUtraBlockValue(int nHeight) {
 	if(nHeight < 1570) {
 		return 22;
 	}
-	if(nHeight < 131400) {
+	if(nHeight < 11300) {
 		return 19.8;
 	}
-	if(nHeight < 197100) {
+	if(nHeight < 12100) {
 		return 17.82;
 	}
-	if(nHeight < 262800) {
+	if(nHeight < 13100) {
 		return 16.038;
 	}
-	if(nHeight < 525600) {
+	if(nHeight < 14100) {
 		return 14.4342;
 	}
 	if(nHeight < 788400) {
@@ -1796,16 +1796,16 @@ float getLuckyBlockValue(int nHeight) {
 	if(nHeight < 2628) {
 		return 77;
 	}
-	if(nHeight < 525600) {
+	if(nHeight < 11200) {
 		return 69.30;
 	}
-	if(nHeight < 788400) {
+	if(nHeight < 12000) {
 		return 62.37;
 	}
-	if(nHeight < 1051200) {
+	if(nHeight < 13000) {
 		return 56.13;
 	}
-	if(nHeight < 131400) {
+	if(nHeight < 14000) {
 		return 50.52;
 	}
 	if(nHeight < 1576800) {
