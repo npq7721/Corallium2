@@ -64,9 +64,12 @@ bool WalletFrame::setCurrentWallet(const QString& name)
         return false;
 
     WalletView* walletView = mapWalletViews.value(name);
-    walletStack->setCurrentWidget(walletView);
-    walletView->updateEncryptionStatus();
-    return true;
+    if(walletView) {
+		walletStack->setCurrentWidget(walletView);
+		walletView->updateEncryptionStatus();
+		return true;
+    }
+    return false;
 }
 
 bool WalletFrame::removeWallet(const QString& name)
